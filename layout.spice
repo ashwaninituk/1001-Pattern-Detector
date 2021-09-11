@@ -1,0 +1,187 @@
+* SPICE3 file created from layout.ext - technology: scmos
+
+.option scale=1u
+
+M1000 a_n90_27# x vdd vdd pfet w=36 l=2
++  ad=216 pd=84 as=2452 ps=1006
+M1001 a_n82_27# q1 a_n90_27# vdd pfet w=36 l=2
++  ad=216 pd=84 as=0 ps=0
+M1002 d0 q0bar a_n82_27# vdd pfet w=36 l=2
++  ad=216 pd=84 as=0 ps=0
+M1003 a_n66_27# q1bar d0 vdd pfet w=36 l=2
++  ad=216 pd=84 as=0 ps=0
+M1004 a_n58_27# q0 a_n66_27# vdd pfet w=36 l=2
++  ad=216 pd=84 as=0 ps=0
+M1005 vdd x a_n58_27# vdd pfet w=36 l=2
++  ad=0 pd=0 as=0 ps=0
+M1006 a_n32_27# d0 vdd vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1007 a_n24_0# clk a_n32_27# vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1008 a_n16_27# clkbar a_n24_0# vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1009 vdd a_n10_n2# a_n16_27# vdd pfet w=24 l=2
++  ad=0 pd=0 as=0 ps=0
+M1010 a_n10_n2# a_n24_0# vdd vdd pfet w=12 l=2
++  ad=108 pd=42 as=0 ps=0
+M1011 a_27_27# a_n10_n2# vdd vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1012 q0bar clkbar a_27_27# vdd pfet w=24 l=2
++  ad=254 pd=114 as=0 ps=0
+M1013 a_43_27# clk q0bar vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1014 vdd q0 a_43_27# vdd pfet w=24 l=2
++  ad=0 pd=0 as=0 ps=0
+M1015 q0 q0bar vdd vdd pfet w=12 l=2
++  ad=108 pd=42 as=0 ps=0
+M1016 vdd rst q0bar vdd pfet w=22 l=2
++  ad=0 pd=0 as=0 ps=0
+M1017 d1 xbar vdd vdd pfet w=12 l=2
++  ad=108 pd=60 as=0 ps=0
+M1018 a_111_27# q0bar d1 vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1019 vdd q1 a_111_27# vdd pfet w=24 l=2
++  ad=0 pd=0 as=0 ps=0
+M1020 a_136_27# d1 vdd vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1021 a_144_0# clk a_136_27# vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1022 a_152_27# clkbar a_144_0# vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1023 vdd a_158_n2# a_152_27# vdd pfet w=24 l=2
++  ad=0 pd=0 as=0 ps=0
+M1024 a_158_n2# a_144_0# vdd vdd pfet w=12 l=2
++  ad=108 pd=42 as=0 ps=0
+M1025 a_195_27# a_158_n2# vdd vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1026 q1bar clkbar a_195_27# vdd pfet w=24 l=2
++  ad=254 pd=114 as=0 ps=0
+M1027 a_211_27# clk q1bar vdd pfet w=24 l=2
++  ad=144 pd=60 as=0 ps=0
+M1028 vdd q1 a_211_27# vdd pfet w=24 l=2
++  ad=0 pd=0 as=0 ps=0
+M1029 q1 q1bar vdd vdd pfet w=12 l=2
++  ad=108 pd=42 as=0 ps=0
+M1030 vdd rst q1bar vdd pfet w=22 l=2
++  ad=0 pd=0 as=0 ps=0
+M1031 a_269_27# xbar vdd vdd pfet w=36 l=2
++  ad=216 pd=84 as=0 ps=0
+M1032 a_277_27# q1bar a_269_27# vdd pfet w=36 l=2
++  ad=216 pd=84 as=0 ps=0
+M1033 y q0bar a_277_27# vdd pfet w=36 l=2
++  ad=180 pd=82 as=0 ps=0
+M1034 xbar x vdd vdd pfet w=12 l=2
++  ad=60 pd=34 as=0 ps=0
+M1035 a_n90_0# x gnd Gnd nfet w=12 l=2
++  ad=216 pd=108 as=996 ps=504
+M1036 gnd q1 a_n90_0# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1037 a_n90_0# q0bar gnd Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1038 d0 q1bar a_n90_0# Gnd nfet w=12 l=2
++  ad=144 pd=72 as=0 ps=0
+M1039 a_n90_0# q0 d0 Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1040 d0 x a_n90_0# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1041 a_n32_0# d0 gnd Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1042 a_n24_0# clkbar a_n32_0# Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1043 a_n16_0# clk a_n24_0# Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1044 gnd a_n10_n2# a_n16_0# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1045 a_n10_n2# a_n24_0# gnd Gnd nfet w=6 l=2
++  ad=54 pd=30 as=0 ps=0
+M1046 a_27_0# a_n10_n2# gnd Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1047 q0bar clk a_27_0# Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1048 a_43_0# clkbar q0bar Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1049 gnd q0 a_43_0# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1050 q0 q0bar gnd Gnd nfet w=6 l=2
++  ad=54 pd=30 as=0 ps=0
+M1051 a_103_0# xbar gnd Gnd nfet w=12 l=2
++  ad=132 pd=70 as=0 ps=0
+M1052 d1 q0bar a_103_0# Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1053 a_103_0# q1 d1 Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1054 a_136_0# d1 gnd Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1055 a_144_0# clkbar a_136_0# Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1056 a_152_0# clk a_144_0# Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1057 gnd a_158_n2# a_152_0# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1058 a_158_n2# a_144_0# gnd Gnd nfet w=6 l=2
++  ad=54 pd=30 as=0 ps=0
+M1059 a_195_0# a_158_n2# gnd Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1060 q1bar clk a_195_0# Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1061 a_211_0# clkbar q1bar Gnd nfet w=12 l=2
++  ad=72 pd=36 as=0 ps=0
+M1062 gnd q1 a_211_0# Gnd nfet w=12 l=2
++  ad=0 pd=0 as=0 ps=0
+M1063 q1 q1bar gnd Gnd nfet w=6 l=2
++  ad=54 pd=30 as=0 ps=0
+M1064 y xbar gnd Gnd nfet w=6 l=2
++  ad=66 pd=46 as=0 ps=0
+M1065 gnd q1bar y Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1066 y q0bar gnd Gnd nfet w=6 l=2
++  ad=0 pd=0 as=0 ps=0
+M1067 xbar x gnd Gnd nfet w=6 l=2
++  ad=30 pd=22 as=0 ps=0
+C0 vdd clk 23.2fF
+C1 vdd a_n10_n2# 2.5fF
+C2 vdd q1 3.7fF
+C3 vdd rst 12.5fF
+C4 q0 vdd 4.3fF
+C5 vdd x 5.3fF
+C6 vdd clkbar 23.2fF
+C7 vdd q0bar 17.5fF
+C8 vdd xbar 4.3fF
+C9 vdd q1bar 8.2fF
+C10 vdd a_158_n2# 2.5fF
+C11 xbar gnd 18.1fF
+C12 x gnd 21.6fF
+C13 y gnd 5.3fF
+C14 q1bar gnd 30.0fF
+C15 a_144_0# gnd 10.8fF
+C16 q1 gnd 27.5fF
+C17 q0bar gnd 32.3fF
+C18 rst gnd 6.4fF
+C19 a_158_n2# gnd 15.2fF
+C20 d1 gnd 10.7fF
+C21 a_n24_0# gnd 10.8fF
+C22 q0 gnd 17.3fF
+C23 a_n10_n2# gnd 15.2fF
+C24 clkbar gnd 169.4fF
+C25 d0 gnd 12.2fF
+C26 clk gnd 189.6fF
+.model pfet pmos vto = -0.7 kp = 100u
+.model nfet nmos vto = 0.7 kp = 200u
+
+Vsup vdd 0 DC 2
+Vx x 0 pulse(0 2 7n 0.2n 0.2n 25n 118n)
+Vrst rst 0 pulse(2 0 0 0 0 5n 500n)
+Vclk clk 0 pulse(0 2 10n 0.2n 0.2n 20n 40n)
+Vclkbar clkbar 0 pulse(2 0 10n 0.2n 0.2n 20n 40n)
+
+.tran 0.1n 160n
+.control
+	run
+	plot V(clk)
+	plot V(x)
+	plot V(q0)
+	plot V(q1)
+	plot V(y)
+	plot V(x) V(clk)+3 V(q0)+6 V(q1)+9 V(y)+12
+.endc
+.end

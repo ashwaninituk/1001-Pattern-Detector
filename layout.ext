@@ -1,0 +1,190 @@
+timestamp 1606150958
+version 8.0
+tech scmos
+style lambda=1.0(scna20_orb)
+scale 1000 1 100
+resistclasses 26670 59550 23860 19690 27260 2000000 49 26 2505830
+node "a_211_0#" 53 0 211 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_195_0#" 53 0 195 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_152_0#" 53 0 152 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_136_0#" 53 0 136 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_103_0#" 191 564 103 0 ndiff 132 70 0 0 0 0 0 0 0 0 0 0 68 50 0 0 0 0
+node "a_43_0#" 53 0 43 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_27_0#" 53 0 27 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n16_0#" 53 0 -16 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n32_0#" 53 0 -32 0 ndiff 72 36 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n90_0#" 305 1128 -90 0 ndiff 216 108 0 0 0 0 0 0 0 0 0 0 136 100 0 0 0 0
+node "gnd!" 4630 70876 -97 -8 ppc 996 504 208 208 0 0 0 0 0 0 0 0 2080 1092 0 0 0 0
+equiv "gnd!" "gnd!"
+equiv "gnd!" "gnd!"
+equiv "gnd!" "gnd!"
+equiv "gnd!" "gnd!"
+node "xbar" 175 2350 301 6 ndiff 30 22 60 34 0 0 0 0 0 0 0 0 85 60 0 0 0 0
+node "x" 440 5424 296 15 pc 0 0 0 0 86 84 0 0 0 0 0 0 20 18 0 0 0 0
+node "y" 586 5311 269 6 ndiff 66 46 180 82 0 0 0 0 0 0 0 0 176 120 0 0 0 0
+node "a_277_27#" 357 0 277 27 pdiff 0 0 216 84 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_269_27#" 357 0 269 27 pdiff 0 0 216 84 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "q1bar" 954 10006 273 -15 pc 0 0 0 0 168 168 0 0 0 0 0 0 28 22 0 0 0 0
+node "a_211_27#" 238 0 211 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "q1bar" 1132 10936 203 0 ndiff 72 36 254 114 82 82 0 0 0 0 0 0 308 192 0 0 0 0
+node "a_195_27#" 238 0 195 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_152_27#" 238 0 152 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_144_0#" 732 10842 144 0 ndiff 72 36 144 60 82 82 0 0 0 0 0 0 191 114 0 0 0 0
+node "a_136_27#" 238 0 136 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_111_27#" 238 0 111 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "xbar" 667 8390 99 -15 pc 0 0 0 0 120 120 0 0 0 0 0 0 24 20 0 0 0 0
+node "q1" 776 10043 217 -2 p 54 30 108 42 118 118 0 0 0 0 0 0 172 114 0 0 0 0
+node "q0bar" 882 7260 281 74 pc 0 0 0 0 156 156 0 0 0 0 0 0 32 24 0 0 0 0
+node "xbar" 882 7072 265 74 pc 0 0 0 0 156 156 0 0 0 0 0 0 28 22 0 0 0 0
+node "rst" 631 3182 249 74 pc 0 0 0 0 114 114 0 0 0 0 0 0 28 22 0 0 0 0
+node "a_158_n2#" 1480 15198 158 -2 p 54 30 108 42 236 236 0 0 0 0 0 0 193 132 0 0 0 0
+node "d1" 1077 10654 103 27 pdiff 72 36 108 60 118 118 0 0 0 0 0 0 189 112 0 0 0 0
+node "q1" 811 8390 115 -15 pc 0 0 0 0 144 144 0 0 0 0 0 0 24 20 0 0 0 0
+node "a_43_27#" 238 0 43 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "q0bar" 1132 10936 35 0 ndiff 72 36 254 114 82 82 0 0 0 0 0 0 308 192 0 0 0 0
+node "a_27_27#" 238 0 27 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n16_27#" 238 0 -16 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n24_0#" 732 10842 -24 0 ndiff 72 36 144 60 82 82 0 0 0 0 0 0 191 114 0 0 0 0
+node "a_n32_27#" 238 0 -32 27 pdiff 0 0 144 60 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "q0" 776 10043 49 -2 p 54 30 108 42 118 118 0 0 0 0 0 0 172 114 0 0 0 0
+node "q0bar" 954 6884 107 74 pc 0 0 0 0 168 168 0 0 0 0 0 0 24 20 0 0 0 0
+node "rst" 631 3182 81 74 pc 0 0 0 0 114 114 0 0 0 0 0 0 28 22 0 0 0 0
+node "a_n10_n2#" 1480 15198 -10 -2 p 54 30 108 42 236 236 0 0 0 0 0 0 193 132 0 0 0 0
+node "clkbar" 4924 168447 -28 -22 pc 0 0 0 0 832 832 0 0 0 0 0 0 2809 1464 0 0 0 0
+node "a_n58_27#" 357 0 -58 27 pdiff 0 0 216 84 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n66_27#" 357 0 -66 27 pdiff 0 0 216 84 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "d0" 1196 12158 -74 27 pdiff 144 72 216 84 118 118 0 0 0 0 0 0 239 154 0 0 0 0
+node "a_n82_27#" 357 0 -82 27 pdiff 0 0 216 84 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n90_27#" 357 0 -90 27 pdiff 0 0 216 84 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "x" 954 8578 -52 -15 pc 0 0 0 0 168 168 0 0 0 0 0 0 28 22 0 0 0 0
+node "q1bar" 954 8578 -68 -15 pc 0 0 0 0 168 168 0 0 0 0 0 0 28 22 0 0 0 0
+node "q1" 954 8578 -86 -15 pc 0 0 0 0 168 168 0 0 0 0 0 0 28 22 0 0 0 0
+node "q0" 954 7260 -62 74 pc 0 0 0 0 168 168 0 0 0 0 0 0 32 24 0 0 0 0
+node "q0bar" 954 7260 -78 74 pc 0 0 0 0 168 168 0 0 0 0 0 0 32 24 0 0 0 0
+node "x" 954 7388 -95 74 pc 0 0 0 0 172 170 0 0 0 0 0 0 32 24 0 0 0 0
+node "clk" 5593 188637 -28 88 pc 0 0 0 0 944 944 0 0 0 0 0 0 2899 1516 0 0 0 0
+node "vdd!" 29323 0 -98 26 nw 192 192 2452 1006 0 0 0 0 0 0 0 0 2728 1476 0 0 18630 902
+equiv "vdd!" "vdd!"
+equiv "vdd!" "vdd!"
+equiv "vdd!" "vdd!"
+equiv "vdd!" "vdd!"
+cap "d0" "q0" 180
+cap "vdd!" "q1" 1194
+cap "d1" "a_103_0#" 846
+cap "vdd!" "q0bar" 2940
+cap "q0bar" "vdd!" 5800
+cap "vdd!" "clk" 23184
+cap "vdd!" "a_144_0#" 1335
+cap "x" "d0" 180
+cap "vdd!" "xbar" 141
+cap "q0bar" "vdd!" 2940
+cap "q1bar" "y" 180
+cap "vdd!" "a_n24_0#" 1335
+cap "x" "vdd!" 2940
+cap "vdd!" "q1" 1335
+cap "q1" "vdd!" 1194
+cap "vdd!" "q0" 1335
+cap "vdd!" "q1bar" 1194
+cap "vdd!" "clkbar" 23184
+cap "d1" "q0bar" 240
+cap "vdd!" "q1bar" 1194
+cap "vdd!" "a_n10_n2#" 2529
+cap "vdd!" "q0bar" 5796
+cap "x" "gnd!" 240
+cap "q0bar" "q0" 420
+cap "vdd!" "q1bar" 5800
+cap "a_n90_0#" "d0" 846
+cap "gnd!" "xbar" 240
+cap "clk" "clkbar" 1680
+cap "q1" "gnd!" 240
+cap "d0" "q1bar" 180
+cap "gnd!" "clk" 960
+cap "vdd!" "a_158_n2#" 2529
+cap "vdd!" "y" 141
+cap "vdd!" "rst" 6272
+cap "vdd!" "d1" 1335
+cap "vdd!" "x" 1194
+cap "vdd!" "rst" 6272
+cap "a_n24_0#" "a_n10_n2#" 420
+cap "q1" "gnd!" 240
+cap "vdd!" "q0" 2940
+cap "q1bar" "gnd!" 240
+cap "y" "q0bar" 180
+cap "x" "vdd!" 1194
+cap "a_158_n2#" "a_144_0#" 420
+cap "vdd!" "xbar" 2940
+cap "d1" "q1" 240
+cap "gnd!" "clkbar" 960
+cap "a_n90_0#" "gnd!" 846
+cap "q1bar" "q1" 420
+cap "vdd!" "d0" 1335
+cap "vdd!" "xbar" 1194
+cap "q1bar" "gnd!" 240
+device mosfet nfet 299 6 300 7 2 6 "Gnd!" "x" 4 0 "gnd!" 6 0 "xbar" 6 0
+device mosfet nfet 283 6 284 7 2 6 "Gnd!" "q0bar" 4 0 "gnd!" 6 0 "y" 6 0
+device mosfet nfet 275 6 276 7 2 6 "Gnd!" "q1bar" 4 0 "y" 6 0 "gnd!" 6 0
+device mosfet nfet 267 6 268 7 2 6 "Gnd!" "xbar" 4 0 "gnd!" 6 0 "y" 6 0
+device mosfet nfet 231 6 232 7 2 6 "Gnd!" "q1bar" 4 0 "gnd!" 6 0 "q1" 6 0
+device mosfet nfet 217 0 218 1 2 12 "Gnd!" "q1" 4 0 "a_211_0#" 12 0 "gnd!" 12 0
+device mosfet nfet 209 0 210 1 2 12 "Gnd!" "clkbar" 4 0 "q1bar" 12 0 "a_211_0#" 12 0
+device mosfet nfet 201 0 202 1 2 12 "Gnd!" "clk" 4 0 "a_195_0#" 12 0 "q1bar" 12 0
+device mosfet nfet 193 0 194 1 2 12 "Gnd!" "a_158_n2#" 4 0 "gnd!" 12 0 "a_195_0#" 12 0
+device mosfet nfet 173 6 174 7 2 6 "Gnd!" "a_144_0#" 4 0 "gnd!" 6 0 "a_158_n2#" 6 0
+device mosfet nfet 158 0 159 1 2 12 "Gnd!" "a_158_n2#" 4 0 "a_152_0#" 12 0 "gnd!" 12 0
+device mosfet nfet 150 0 151 1 2 12 "Gnd!" "clk" 4 0 "a_144_0#" 12 0 "a_152_0#" 12 0
+device mosfet nfet 142 0 143 1 2 12 "Gnd!" "clkbar" 4 0 "a_136_0#" 12 0 "a_144_0#" 12 0
+device mosfet nfet 134 0 135 1 2 12 "Gnd!" "d1" 4 0 "gnd!" 12 0 "a_136_0#" 12 0
+device mosfet nfet 117 0 118 1 2 12 "Gnd!" "q1" 4 0 "d1" 12 0 "a_103_0#" 12 0
+device mosfet nfet 109 0 110 1 2 12 "Gnd!" "q0bar" 4 0 "a_103_0#" 12 0 "d1" 12 0
+device mosfet nfet 101 0 102 1 2 12 "Gnd!" "xbar" 4 0 "gnd!" 12 0 "a_103_0#" 12 0
+device mosfet nfet 63 6 64 7 2 6 "Gnd!" "q0bar" 4 0 "gnd!" 6 0 "q0" 6 0
+device mosfet nfet 49 0 50 1 2 12 "Gnd!" "q0" 4 0 "a_43_0#" 12 0 "gnd!" 12 0
+device mosfet nfet 41 0 42 1 2 12 "Gnd!" "clkbar" 4 0 "q0bar" 12 0 "a_43_0#" 12 0
+device mosfet nfet 33 0 34 1 2 12 "Gnd!" "clk" 4 0 "a_27_0#" 12 0 "q0bar" 12 0
+device mosfet nfet 25 0 26 1 2 12 "Gnd!" "a_n10_n2#" 4 0 "gnd!" 12 0 "a_27_0#" 12 0
+device mosfet nfet 5 6 6 7 2 6 "Gnd!" "a_n24_0#" 4 0 "gnd!" 6 0 "a_n10_n2#" 6 0
+device mosfet nfet -10 0 -9 1 2 12 "Gnd!" "a_n10_n2#" 4 0 "a_n16_0#" 12 0 "gnd!" 12 0
+device mosfet nfet -18 0 -17 1 2 12 "Gnd!" "clk" 4 0 "a_n24_0#" 12 0 "a_n16_0#" 12 0
+device mosfet nfet -26 0 -25 1 2 12 "Gnd!" "clkbar" 4 0 "a_n32_0#" 12 0 "a_n24_0#" 12 0
+device mosfet nfet -34 0 -33 1 2 12 "Gnd!" "d0" 4 0 "gnd!" 12 0 "a_n32_0#" 12 0
+device mosfet nfet -52 0 -51 1 2 12 "Gnd!" "x" 4 0 "a_n90_0#" 12 0 "d0" 12 0
+device mosfet nfet -60 0 -59 1 2 12 "Gnd!" "q0" 4 0 "d0" 12 0 "a_n90_0#" 12 0
+device mosfet nfet -68 0 -67 1 2 12 "Gnd!" "q1bar" 4 0 "a_n90_0#" 12 0 "d0" 12 0
+device mosfet nfet -76 0 -75 1 2 12 "Gnd!" "q0bar" 4 0 "gnd!" 12 0 "a_n90_0#" 12 0
+device mosfet nfet -84 0 -83 1 2 12 "Gnd!" "q1" 4 0 "a_n90_0#" 12 0 "gnd!" 12 0
+device mosfet nfet -92 0 -91 1 2 12 "Gnd!" "x" 4 0 "gnd!" 12 0 "a_n90_0#" 12 0
+device mosfet pfet 299 27 300 28 2 12 "vdd!" "x" 4 0 "vdd!" 12 0 "xbar" 12 0
+device mosfet pfet 283 27 284 28 2 36 "vdd!" "q0bar" 4 0 "a_277_27#" 36 0 "y" 36 0
+device mosfet pfet 275 27 276 28 2 36 "vdd!" "q1bar" 4 0 "a_269_27#" 36 0 "a_277_27#" 36 0
+device mosfet pfet 267 27 268 28 2 36 "vdd!" "xbar" 4 0 "vdd!" 36 0 "a_269_27#" 36 0
+device mosfet pfet 251 27 252 28 2 22 "vdd!" "rst" 4 0 "q1bar" 22 0 "vdd!" 22 0
+device mosfet pfet 231 27 232 28 2 12 "vdd!" "q1bar" 4 0 "vdd!" 12 0 "q1" 12 0
+device mosfet pfet 217 27 218 28 2 24 "vdd!" "q1" 4 0 "a_211_27#" 24 0 "vdd!" 24 0
+device mosfet pfet 209 27 210 28 2 24 "vdd!" "clk" 4 0 "q1bar" 24 0 "a_211_27#" 24 0
+device mosfet pfet 201 27 202 28 2 24 "vdd!" "clkbar" 4 0 "a_195_27#" 24 0 "q1bar" 24 0
+device mosfet pfet 193 27 194 28 2 24 "vdd!" "a_158_n2#" 4 0 "vdd!" 24 0 "a_195_27#" 24 0
+device mosfet pfet 173 27 174 28 2 12 "vdd!" "a_144_0#" 4 0 "vdd!" 12 0 "a_158_n2#" 12 0
+device mosfet pfet 158 27 159 28 2 24 "vdd!" "a_158_n2#" 4 0 "a_152_27#" 24 0 "vdd!" 24 0
+device mosfet pfet 150 27 151 28 2 24 "vdd!" "clkbar" 4 0 "a_144_0#" 24 0 "a_152_27#" 24 0
+device mosfet pfet 142 27 143 28 2 24 "vdd!" "clk" 4 0 "a_136_27#" 24 0 "a_144_0#" 24 0
+device mosfet pfet 134 27 135 28 2 24 "vdd!" "d1" 4 0 "vdd!" 24 0 "a_136_27#" 24 0
+device mosfet pfet 117 27 118 28 2 24 "vdd!" "q1" 4 0 "a_111_27#" 24 0 "vdd!" 24 0
+device mosfet pfet 109 27 110 28 2 24 "vdd!" "q0bar" 4 0 "d1" 24 0 "a_111_27#" 24 0
+device mosfet pfet 101 27 102 28 2 12 "vdd!" "xbar" 4 0 "vdd!" 12 0 "d1" 12 0
+device mosfet pfet 83 27 84 28 2 22 "vdd!" "rst" 4 0 "q0bar" 22 0 "vdd!" 22 0
+device mosfet pfet 63 27 64 28 2 12 "vdd!" "q0bar" 4 0 "vdd!" 12 0 "q0" 12 0
+device mosfet pfet 49 27 50 28 2 24 "vdd!" "q0" 4 0 "a_43_27#" 24 0 "vdd!" 24 0
+device mosfet pfet 41 27 42 28 2 24 "vdd!" "clk" 4 0 "q0bar" 24 0 "a_43_27#" 24 0
+device mosfet pfet 33 27 34 28 2 24 "vdd!" "clkbar" 4 0 "a_27_27#" 24 0 "q0bar" 24 0
+device mosfet pfet 25 27 26 28 2 24 "vdd!" "a_n10_n2#" 4 0 "vdd!" 24 0 "a_27_27#" 24 0
+device mosfet pfet 5 27 6 28 2 12 "vdd!" "a_n24_0#" 4 0 "vdd!" 12 0 "a_n10_n2#" 12 0
+device mosfet pfet -10 27 -9 28 2 24 "vdd!" "a_n10_n2#" 4 0 "a_n16_27#" 24 0 "vdd!" 24 0
+device mosfet pfet -18 27 -17 28 2 24 "vdd!" "clkbar" 4 0 "a_n24_0#" 24 0 "a_n16_27#" 24 0
+device mosfet pfet -26 27 -25 28 2 24 "vdd!" "clk" 4 0 "a_n32_27#" 24 0 "a_n24_0#" 24 0
+device mosfet pfet -34 27 -33 28 2 24 "vdd!" "d0" 4 0 "vdd!" 24 0 "a_n32_27#" 24 0
+device mosfet pfet -52 27 -51 28 2 36 "vdd!" "x" 4 0 "a_n58_27#" 36 0 "vdd!" 36 0
+device mosfet pfet -60 27 -59 28 2 36 "vdd!" "q0" 4 0 "a_n66_27#" 36 0 "a_n58_27#" 36 0
+device mosfet pfet -68 27 -67 28 2 36 "vdd!" "q1bar" 4 0 "d0" 36 0 "a_n66_27#" 36 0
+device mosfet pfet -76 27 -75 28 2 36 "vdd!" "q0bar" 4 0 "a_n82_27#" 36 0 "d0" 36 0
+device mosfet pfet -84 27 -83 28 2 36 "vdd!" "q1" 4 0 "a_n90_27#" 36 0 "a_n82_27#" 36 0
+device mosfet pfet -92 27 -91 28 2 36 "vdd!" "x" 4 0 "vdd!" 36 0 "a_n90_27#" 36 0

@@ -1,0 +1,99 @@
+Prelayout for sequence detector 1001
+
+.subckt latch d clk clkbar out vdd
+Mn1 n1 d 0 0 my_nmos w = 12u l = 2u
+Mn2 out1 clkbar n1 0 my_nmos w = 12u l = 2u
+Mn3 n3 out 0 0 my_nmos w = 12u l = 2u
+Mn4 out1 clk n3 0 my_nmos w = 12u l = 2u
+Mn5 out out1 0 0 my_nmos w = 6u l = 2u
+Mp1 out1 clk n2 vdd my_pmos w = 24u l = 2u
+Mp2 n2 d vdd vdd my_pmos w = 24u l = 2u
+Mp3 out1 clkbar n4 vdd my_pmos w = 24u l = 2u
+Mp4 n4 out vdd vdd my_pmos w = 24u l = 2u
+Mp5 out out1 vdd vdd my_pmos w = 12u l = 2u
+.model my_pmos pmos vto = -0.7 kp = 100u
+.model my_nmos nmos vto = 0.7 kp = 200u
+.ends latch
+
+.subckt latchrst d rst clk clkbar out vdd
+Mn1 n1 d 0 0 my_nmos w = 12u l = 2u
+Mn2 out1 clkbar n1 0 my_nmos w = 12u l = 2u
+Mn3 n3 out 0 0 my_nmos w = 8u l = 12u
+Mn4 out1 clk n3 0 my_nmos w = 12u l = 2u
+Mn5 out out1 0 0 my_nmos w = 6u l = 2u
+Mp1 out1 clk n2 vdd my_pmos w = 24u l = 2u
+Mp2 n2 d vdd vdd my_pmos w = 24u l = 2u
+Mp3 out1 clkbar n4 vdd my_pmos w = 24u l = 2u
+Mp4 n4 out vdd vdd my_pmos w = 24u l = 2u
+Mp5 out out1 vdd vdd my_pmos w = 12u l = 2u
+Mp6 out1 rst vdd vdd my_pmos w = 24u l = 2u
+.model my_pmos pmos vto = -0.7 kp = 100u
+.model my_nmos nmos vto = 0.7 kp = 200u
+.ends latchrst
+
+*Positive Edge Triggered D Flip Flop.
+
+.subckt dff d rst clk clkbar q vdd
+XL0 d clk clkbar qint vdd latch
+XL1 qint rst clkbar clk q vdd latchrst
+.ends dff
+
+.subckt inv in out vdd
+Mn out in 0 0 my_nmos w = 6u l = 2u
+Mp out in vdd vdd my_pmos w = 12u l = 2u
+.model my_pmos pmos vto = -0.7 kp = 100u
+.model my_nmos nmos vto = 0.7 kp = 200u
+.ends inv
+
+Vsup vdd 0 DC 2
+Vx x 0 pulse(0 2 7n 0.2n 0.2n 25n 118n)
+Vrst rst 0 pulse(2 0 0 0 0 5n 500n)
+Vclk clk 0 pulse(0 2 10n 0.2n 0.2n 20n 40n)
+Vclkbar clkbar 0 pulse(2 0 10n 0.2n 0.2n 20n 40n)
+
+XD0 d0 rst clk clkbar q0 vdd dff
+XD1 d1 rst clk clkbar q1 vdd dff
+Xinv1 x xbar vdd inv
+Xinv2 q0 q0bar vdd inv
+Xinv3 q1 q1bar vdd inv
+
+Mn1 n1 q0 0 0 my_nmos w = 12u l = 2u
+Mn2 n1 q1bar 0 0 my_nmos w = 12u l = 2u
+Mn3 n1 x 0 0 my_nmos w = 12u l = 2u
+Mn4 d0 q0bar n1 0 my_nmos w = 12u l = 2u
+Mn5 d0 q1 n1 0 my_nmos w = 12u l = 2u
+Mn6 d0 x n1 0 my_nmos w = 12u l = 2u
+Mp1 d0 q0bar n2 vdd my_pmos w = 36u l = 2u
+Mp2 n2 q1 n3 vdd my_pmos w = 36u l = 2u
+Mp3 n3 x vdd vdd my_pmos w = 36u l = 2u
+Mp4 d0 q1bar n4 vdd my_pmos w = 36u l = 2u
+Mp5 n4 q0 n5 vdd my_pmos w = 36u l = 2u
+Mp6 n5 x vdd vdd my_pmos w = 36u l = 2u
+
+Mn7 n6 xbar 0 0 my_nmos w = 12u l = 2u
+Mn8 d1 q1 n6 0 my_nmos w = 12u l = 2u
+Mn9 d1 q0bar n6 0 my_nmos w = 12u l = 2u
+Mp7 d1 xbar vdd vdd my_pmos w = 12u l = 2u
+Mp8 d1 q0bar n7 vdd my_pmos w = 24u l = 2u
+Mp9 n7 q1 vdd vdd my_pmos w = 24u l = 2u
+
+Mn10 y q1bar 0 0 my_nmos w = 6u l = 2u
+Mn11 y q0bar 0 0 my_nmos w = 6u l = 2u
+Mn12 y xbar 0 0 my_nmos w = 6u l = 2u
+Mp10 y q0bar n8 vdd my_pmos w = 36u l = 2u
+Mp11 n8 q1bar n9 vdd my_pmos w = 36u l = 2u
+Mp12 n9 xbar vdd vdd my_pmos w = 36u l = 2u
+
+.model my_pmos pmos vto = -0.7 kp = 100u
+.model my_nmos nmos vto = 0.7 kp = 200u
+
+.tran 0.1n 160n
+.control
+	run
+	plot V(clk)
+	plot V(x)
+	plot V(q0)
+	plot V(q1)
+	plot V(y)
+.endc
+.end
